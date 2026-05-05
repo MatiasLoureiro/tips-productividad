@@ -39,7 +39,7 @@ function App() {
       <section className="tip-card">
         <h2 className="section-title">Tip actual</h2>
         <p className="tip-text">{productivityTips[selectedTipIndex]}</p>
-        <p className="tip-votes">Votos: {votes[selectedTipIndex]}</p>
+        <p className="tip-votes">Votos: {votes[selectedTipIndex]} (máximo: {Math.max(...votes)})</p>
         <div className="buttons">
           <button type="button" onClick={voteCurrentTip}>
             Votar
