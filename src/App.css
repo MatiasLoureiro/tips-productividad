@@ -182,3 +182,64 @@
     border-right-color: var(--border);
   }
 }
+
+.app-container {
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.tip-card {
+  max-width: 720px;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 30px 24px;
+  background: rgba(244, 243, 236, 0.35);
+}
+
+.tip-text {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.tip-votes {
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  background: var(--accent-bg);
+  color: var(--text-h);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buttons button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 28px 16px;
+  }
+
+  .tip-card {
+    padding: 24px 18px;
+  }
+}
