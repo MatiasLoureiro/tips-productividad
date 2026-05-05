@@ -191,13 +191,61 @@
   gap: 24px;
 }
 
-.tip-card {
+.section-title {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.tip-card,
+.best-tip-card {
   max-width: 720px;
   width: 100%;
   border: 1px solid var(--border);
   border-radius: 18px;
   padding: 30px 24px;
-  background: rgba(244, 243, 236, 0.35);
+  background: rgba(244, 243, 236, 0.55);
+}
+
+.best-tip-card {
+  background: rgba(170, 59, 255, 0.08);
+}
+
+.overview {
+  max-width: 720px;
+  width: 100%;
+}
+
+.tip-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.tip-item {
+  padding: 18px 20px;
+  border: 1px solid rgba(170, 59, 255, 0.16);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.tip-item p {
+  margin: 0;
+  text-align: left;
+  flex: 1;
+}
+
+.tip-item span {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.tip-card {
+  background: rgba(255, 255, 255, 0.92);
 }
 
 .tip-text {
